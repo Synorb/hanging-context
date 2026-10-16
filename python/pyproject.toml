@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hanging-context"
+version = "0.1.0"
+description = "Tiny client and CLI for Hanging Context: free, keyless stories for AI agents, with cited sources."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Synorb Inc." }]
+keywords = ["hanging-context", "synorb", "agents", "ai-agents", "context", "citations", "provenance", "nlweb", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://hangingcontext.com"
+Repository = "https://github.com/Synorb/hanging-context"
+Issues = "https://github.com/Synorb/hanging-context/issues"
+
+[project.scripts]
+hanging-context = "hanging_context.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hanging_context"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "LICENSE", "pyproject.toml"]

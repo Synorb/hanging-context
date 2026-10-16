@@ -1,0 +1,35 @@
+{
+  "name": "hanging-context",
+  "version": "0.1.0",
+  "description": "Tiny client and CLI for Hanging Context: free, keyless stories for AI agents, with cited sources.",
+  "license": "MIT",
+  "author": "Synorb Inc.",
+  "homepage": "https://hangingcontext.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synorb/hanging-context.git",
+    "directory": "js"
+  },
+  "bugs": "https://github.com/Synorb/hanging-context/issues",
+  "keywords": ["hanging-context", "synorb", "agents", "ai-agents", "context", "citations", "provenance", "nlweb", "cli"],
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "hanging-context": "bin/hanging-context.js"
+  },
+  "files": ["src", "bin", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
