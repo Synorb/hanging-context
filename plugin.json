@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hanging-context",
+  "version": "1.0.0",
+  "description": "Fresh, cited context from the last 24 hours for agents. Free, no key.",
+  "author": {
+    "name": "Synorb Inc.",
+    "email": "team@synorb.com",
+    "url": "https://synorb.com"
+  },
+  "homepage": "https://hangingcontext.com/",
+  "repository": "https://github.com/Synorb/hanging-context",
+  "license": "MIT",
+  "keywords": [
+    "context",
+    "news",
+    "citations",
+    "mcp",
+    "provenance"
+  ]
+}
